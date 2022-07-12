@@ -6,7 +6,7 @@ export default defineConfig({
   plugins: [vue()],
 })
 
-// vuex  +  axios + vue-router  + ts
+// vue3 + pinia + axios + vue-router  + ts
 
 // ├── index.html
 // ├── main.js
