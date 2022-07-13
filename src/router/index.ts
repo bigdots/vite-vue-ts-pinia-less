@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 
-import Index from '../views/Index.vue'
+import Index from '../pages/index/Index.vue'
 
 const routes: RouteRecordRaw[] = [
   {
@@ -8,8 +8,8 @@ const routes: RouteRecordRaw[] = [
     component: Index,
   },
   {
-    path: '/About',
-    component: () => import('../views/About.vue'),
+    path: '/demo',
+    component: () => import('../pages/demo/Demo.vue'),
   },
 ]
 

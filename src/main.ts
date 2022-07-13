@@ -3,8 +3,8 @@ import App from './App.vue'
 import $http from './api/index'
 import router from './router/index'
 import { createPinia } from 'pinia'
-import store from './store'
 
+const store = createPinia()
 const app = createApp(App)
 
 // 将api挂载到全局对象，在组件中可使用this.$http来调用
