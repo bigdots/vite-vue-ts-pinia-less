@@ -1,4 +1,4 @@
-import axios from 'axios'
+import axios, { AxiosRequestConfig } from 'axios'
 /**
  * GET请求方法封装
  * @param params
@@ -6,10 +6,11 @@ import axios from 'axios'
  * @param params.responseType
  * @returns Promise
  */
-export function GET(params) {
+export function GET(config: AxiosRequestConfig<any>) {
   return axios({
     method: 'get',
-    ...params,
+    baseURL: 'https://api.apiopen.top',
+    ...config,
   })
 }
 /**
@@ -19,9 +20,10 @@ export function GET(params) {
  * @param params.data
  * @returns Promise
  */
-export function POST(params) {
+export function POST(config: AxiosRequestConfig<any>) {
   return axios({
     method: 'post',
-    ...params,
+    baseURL: '',
+    ...config,
   })
 }
