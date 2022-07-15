@@ -7,7 +7,7 @@
 </template>
 
 <script  setup lang="ts">
-import { demoStore } from '../../store/demo'
+import { demoStore } from '@/store/demo'
 const store = demoStore()
 
 

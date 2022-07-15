@@ -1,6 +1,6 @@
 import { createApp } from 'vue'
 import App from './App.vue'
-import $http from './api/index'
+import $http from './api/demo'
 import router from './router/index'
 import { createPinia } from 'pinia'
 
