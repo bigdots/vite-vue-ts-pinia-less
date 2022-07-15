@@ -1,10 +1,13 @@
 import { GET } from './request'
 
+const host = import.meta.env.VITE_APIHOST
+
 function musicRankingsDetails() {
   return GET({
-    url: '/musicRankingsDetails',
+    baseURL: host,
+    url: '/api-wenan-mingrenmingyan/index.php',
     params: {
-      type: 1,
+      aa1: 'json',
     },
   })
 }

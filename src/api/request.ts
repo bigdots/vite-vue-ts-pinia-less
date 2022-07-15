@@ -1,4 +1,7 @@
 import axios, { AxiosRequestConfig } from 'axios'
+
+const host = import.meta.env.VITE_APIHOST // 请求地址公共部分
+
 /**
  * GET请求方法封装
  * @param params
@@ -8,8 +11,8 @@ import axios, { AxiosRequestConfig } from 'axios'
  */
 export function GET(config: AxiosRequestConfig<any>) {
   return axios({
+    baseURL: host,
     method: 'get',
-    baseURL: 'https://api.apiopen.top',
     ...config,
   })
 }
@@ -22,8 +25,8 @@ export function GET(config: AxiosRequestConfig<any>) {
  */
 export function POST(config: AxiosRequestConfig<any>) {
   return axios({
+    baseURL: host,
     method: 'post',
-    baseURL: '',
     ...config,
   })
 }
