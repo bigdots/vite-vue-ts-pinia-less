@@ -2,7 +2,7 @@ import { GET } from './request'
 
 const host = import.meta.env.VITE_APIHOST
 
-function musicRankingsDetails() {
+function queryword() {
   return GET({
     baseURL: host,
     url: '/api-wenan-mingrenmingyan/index.php',
@@ -13,5 +13,5 @@ function musicRankingsDetails() {
 }
 
 export default {
-  musicRankingsDetails,
+  queryword,
 }
